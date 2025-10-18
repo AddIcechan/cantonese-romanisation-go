@@ -1,5 +1,5 @@
 # Cantonese Romanisation (Go)
-[![Go CI](https://github.com/chunlaw/cantonese-romanisation-go/actions/workflows/ci.yml/badge.svg)](https://github.com/chunlaw/cantonese-romanisation-go/actions/workflows/ci.yml)
+[![Go CI](https://github.com/AddIcechan/cantonese-romanisation-go/actions/workflows/ci.yml/badge.svg)](https://github.com/AddIcechan/cantonese-romanisation-go/actions/workflows/ci.yml)
 
 Port of [`chunlaw/cantonese-romanisation`](https://github.com/chunlaw/cantonese-romanisation) providing a Go API for
 looking up Cantonese pronunciations for individual Han characters.
