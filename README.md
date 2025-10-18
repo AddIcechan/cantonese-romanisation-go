@@ -13,7 +13,7 @@ The embedded dictionary exposes three romanisation systems:
 ## Installation
 
 ```bash
-go get github.com/chunlaw/cantonese-romanisation-go
+go get github.com/AddIcechan/cantonese-romanisation-go
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ package main
 import (
 	"fmt"
 
-	cantonese "github.com/chunlaw/cantonese-romanisation-go"
+	cantonese "github.com/AddIcechan/cantonese-romanisation-go"
 )
 
 func main() {
