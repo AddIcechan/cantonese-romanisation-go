@@ -1,0 +1,30 @@
+name: Go CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Verify gofmt
+        run: |
+          CHANGED=$(gofmt -l $(git ls-files '*.go'))
+          if [ -n "$CHANGED" ]; then
+            echo "The following files are not gofmt'ed:"
+            echo "$CHANGED"
+            exit 1
+          fi
+
+      - name: Go test
+        run: go test ./...
